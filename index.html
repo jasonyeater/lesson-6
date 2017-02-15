@@ -7,15 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
     
     <!--link to css files or font files-->
-    <link rel="stylesheet" type="text/css" href="CSS/framwork.css">
+<!--    <link rel="stylesheet" type="text/css" href="CSS/framwork.css">-->
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <title>Assignment</title>
     
 </head>
     <body>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-12 border">
+            <div class="col-md-12 border">
                 <header id="header">
             
                 <h1>Web Ninia</h1>
@@ -27,7 +29,7 @@
         </div>
 <!--End Header-->
         <div class="row">
-            <div class="col-12 border">
+            <div class="col-md-12 border">
                 <nav id="nav">
                     <ul class="button-wrap">
                         <button>Schedule</button>
@@ -41,10 +43,10 @@
 <!--End Menu-->
     
         <div class='row max-width'>
-        <div class="col-8 border">
+        <div class="col-md-8 border">
                     <div id="main-content-wrapper">
                         <div class="side-by-side">
-                                <section class="image-content">
+                                <section class="image-content col-6">
                                 
                                     <img
                                     src="http://image.trucktrend.com/f/47066104+re0+ar0+st0/1996-ford-f-350-4.jpg">
@@ -64,7 +66,7 @@
                     </div>
         </div>
                     <!--end main-content-wrapper-->
-                <div class='col-4 border'>
+                <div class='col-md-4 border'>
                     <div id="aside-content-wrapper">
                         <aside id="aside-right">
                             <h3>Latest Work</h3>
@@ -86,17 +88,28 @@
         </div>
         
         <div id="favorite-sites" class='row'>
-            <ul>
-                <li><img src="images/fbook.png"></li>
-                <li><img src="images/gplus.png"></li>
-                <li><img src="images/twitter.png"></li>
-            </ul>    
+                <div class="col-md-4 border">
+                    <img src="images/fbook.png">
+                </div>
+                <div class="col-md-4 border">
+                    <img src="images/gplus.png">
+                </div>
+                <div class="col-md-4 border">
+                    <img src="images/twitter.png">
+                </div>   
         
         </div>
-        <footer>Footer</footer>
-    
+        <div class="row">
+            <div class="col-md-12 border">
+                <footer><h1>Footer</h1></footer>
+            </div>
+        </div>
+    </div>
     <!--end container--> 
     <script src="js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+        
     </body>
     
 

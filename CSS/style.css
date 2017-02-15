@@ -167,7 +167,7 @@ body {
 
 #favorite-sites {
     background-image: url(img/bg.jpg);
-    border-top:5px #C27800 solid;
+    border-top:5px #005EFF solid;
     border-bottom: 5px #005EFF solid;
     text-align: center;
 }
@@ -187,12 +187,19 @@ footer {
     min-height: 100px;
 }
 
+/*
 footer > h1 {
     margin:0;
     transform: translate(50%);
 }
+*/
 
 .max-width {
     margin:0 auto;
     max-width: 960px;
+}
+
+/*bootstrap related*/
+.container-fluid {
+    padding:0;
 }
