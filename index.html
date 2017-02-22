@@ -33,8 +33,8 @@
                 <nav id="nav">
                     <ul class="button-wrap">
                         <button>Schedule</button>
-                        <button>CSS</button>
-                        <button>HTML</button>
+                        <button data-toggle="modal" data-target="#css3_modal">CSS</button>
+                        <button data-toggle="modal" data-target="#html5_modal">HTML</button>
                         <button>Responsive Design</button>
                     </ul>
                 </nav>
@@ -87,17 +87,18 @@
             <!--End of middle-wrapper-->
         </div>
         
-        <div id="favorite-sites" class='row'>
+        <div id="favorite-sites">
+            <div class="row">
                 <div class="col-md-4 border">
-                    <img src="images/fbook.png">
+                    <img class="img-responsive" src="images/fbook.png">
                 </div>
                 <div class="col-md-4 border">
-                    <img src="images/gplus.png">
+                    <img class="img-responsive" src="images/gplus.png">
                 </div>
                 <div class="col-md-4 border">
-                    <img src="images/twitter.png">
+                    <img class="img-responsive" src="images/twitter.png">
                 </div>   
-        
+            </div>
         </div>
         <div class="row">
             <div class="col-md-12 border">
@@ -105,7 +106,58 @@
             </div>
         </div>
     </div>
-    <!--end container--> 
+    <!--end container-->
+        
+<!-- Modal-HTML5 -->
+<div class="modal fade" id="html5_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div class="img-modal">
+            <img src="images/html5.png">
+                </div>
+          <br>
+          <p><strong>HTML5</strong>The latest evolution of the standard that defines HTML. The term represents two different concepts: It is a new version of the language HTML, with new elements, attributes, and behaviors, and a larger set of technologies that allows more diverse and powerful Web sites and applications.</p>
+          
+          <p>Source:</p><span><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a></span>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      
+<!-- Modal-CSS3 -->
+<div class="modal fade" id="css3_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div class="img-modal">
+            <img src="images/css3.svg">
+                </div>
+          <br>
+          <p><strong>CSS3</strong>The latest evolution of the Cascading Style Sheets language and aims at extending CSS2.1. It brings a lot of long-awaited novelties, like rounded corners, shadows, gradients, transitions or animations, as well as new layouts like multi-columns, flexible box or grid layouts.</p>
+          
+          <p>Source:</p><span><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3</a></span>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <script src="js/main.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
